@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug in HTML related to accessing non-existent properties of elements using JavaScript. The bug does not halt page rendering, but produces errors in the browser's console.  The solution provides a robust method for accessing element properties while gracefully handling potential errors.
