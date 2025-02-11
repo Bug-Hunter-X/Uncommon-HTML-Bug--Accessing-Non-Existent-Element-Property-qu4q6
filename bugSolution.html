@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    const myDiv = document.getElementById('myDiv');
+    //Robustly accessing properties, handling potential errors.
+    const propertyValue = myDiv && myDiv.hasOwnProperty('textContent') ? myDiv.textContent : 'Property not found';
+    console.log(propertyValue);
+  </script>
+</body>
+</html>
